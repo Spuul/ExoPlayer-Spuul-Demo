@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <EditText
+        android:id="@+id/input_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Source URL"
+        android:inputType="textUri" />
+
+    <EditText
+        android:id="@+id/input_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_url"
+        android:layout_marginBottom="20dp"
+        android:hint="Rendition Token" />
+
+    <EditText
+        android:id="@+id/input_agent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_token"
+        android:layout_marginBottom="20dp"
+        android:hint="Eg: ExoPlayer" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_agent"
+        android:onClick="play"
+        android:text="Play" />
+</RelativeLayout>
